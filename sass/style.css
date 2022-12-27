@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  background-color: #f4f4f4;
+  --border-primary:#773344;
+  --border-secondary:#C45470;
+  --border-gradient:rgb(119,51,68);
+  --blue-primary:#D7F5F5;
+  --blue-secondary:#1DA1F2;
+  --blue-gradient: #cdffff;
+  --black-100:#261F22;
+  --black-75:#534e50;
+  --black-50:#807c73;
+  --black-25:#FFF8DC;
+  --black-10:#f6f6f6;
+  --university-primary:#7bc07d;
+  --university-secondary:#477A49;
+  --university-gradient:rgb(69,74,70);
+  --demister-primary:#3c6e71;
+  --demister-secondary:#698682;
+  --demister-gradient: rgb(60,110,113);
+  --grid-gradient:#bda287;
+}
+
+.along {
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.encabezado {
+  background-color: var(--black-25);
+}
+.encabezado header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado ul:first-child {
+  color: var(--blue-secondary);
+  padding: 1rem;
+}
+.encabezado ul:nth-child(2) {
+  color: var(--black-100);
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.encabezado ul:nth-child(2) li:nth-child(4) {
+  background-color: var(--blue-secondary);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--black-10);
+  padding: 0.7rem;
+}
+.encabezado ul:nth-child(3) {
+  display: none;
+}
+.encabezado main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+.encabezado main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.encabezado main section div:first-child {
+  color: var(--black-100);
+}
+.encabezado main section div:first-child h1 {
+  font-size: 3rem;
+}
+.encabezado main section div:first-child p {
+  color: var(--black-50);
+}
+.encabezado main section div:nth-child(2) {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  align-items: flex-start;
+}
+.encabezado main section div:nth-child(2) ul:first-child {
+  display: flex;
+  gap: 1rem;
+  color: var(--black-10);
+  background-color: var(--blue-secondary);
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+}
+.encabezado main section div:nth-child(2) ul {
+  display: flex;
+  width: 35%;
+  color: var(--blue-secondary);
+  justify-content: start;
+  transition: 0.3s;
+}
+.encabezado main section div:nth-child(3) div:first-child {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+.encabezado main section div:nth-child(3) div:first-child img:first-child {
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(2) {
+  position: absolute;
+  left: 35%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(3) {
+  position: absolute;
+  left: 30%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(4) {
+  position: absolute;
+  left: 25%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(5) {
+  position: absolute;
+  left: 20%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(6) {
+  position: absolute;
+  left: 15%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(7) {
+  position: absolute;
+  left: 10%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(8) {
+  position: absolute;
+  left: 5%;
+}
+.encabezado main section div:nth-child(3) div:first-child img:nth-child(9) {
+  position: absolute;
+  left: 0%;
+}
+.encabezado main section div:nth-child(3) p {
+  display: block;
+}
+.encabezado main section div:nth-child(3) p span {
+  color: var(--blue-secondary);
+}
+.encabezado main aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado main aside img {
+  width: 30rem;
+  height: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fourthmode {
+  padding: 1rem;
+}
+.fourthmode div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.fourthmode div div {
+  border-radius: 0.3rem;
+  border: 1px solid var(--black-50);
+  padding: 1rem;
+}
+.fourthmode div img {
+  height: 25px;
+  width: 25px;
+}
+
+.twetts {
+  padding: 1rem;
+  background: var(--blue-gradient);
+}
+.twetts div {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+}
+.twetts div .container {
+  border-radius: 0.3rem;
+  border: 1px solid var(--black-50);
+  background-color: var(--black-10);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.twetts div .container .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twetts div .container .avatar div:first-child {
+  display: flex;
+  gap: 0.2rem;
+}
+.twetts div .container .avatar div:first-child div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.twetts div .container .avatar div:first-child div h1 {
+  font-size: 15px;
+}
+.twetts div .container .avatar div:first-child div p {
+  font-size: 12px;
+  color: var(--black-50);
+}
+.twetts div .container .avatar .twitterBlueimg {
+  justify-items: end;
+  align-items: center;
+}
+.twetts div .container .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+}
+.twetts div .container .heart div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.twetts div .container .heart img {
+  width: 15px;
+  height: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .encabezado header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .encabezado ul:first-child {
+    color: var(--blue-secondary);
+    padding: 1rem;
+  }
+  .encabezado ul:nth-child(2) {
+    display: none;
+  }
+  .encabezado ul:nth-child(3) {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
